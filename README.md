@@ -25,7 +25,7 @@ PXO files use Intel (little-endian) byte order.
 The format is based on ASE file format specification, but with changes (signature and version instead of magic number, diffrent data types, etc...). The color depth is always static - 32 bit, and images are always compressed with [ZStandard](https://github.com/facebook/zstd).
 
 ## Header
-Header without constant size.
+Header is without constant size.
 
     BYTE[3]      Signature (Always 'PXO' in ascii codes)
     BYTE[3]      Version (see Versioning section for more info)
@@ -44,13 +44,13 @@ Every new PXO File Format Specification has to be released along with new Pixelo
 ### Export Formats
 Export format stores value of an enum-like structure with respectable values:
 
-    PNG = 0x1
-    GIF = 0x2
+    PNG          = 0x1
+    GIF          = 0x2
 
 ## Tags
 After header comes tags section which holds tags' informations.
 
-    DWORD        Bytes in this section
+    WORD         Tags count
     Tag          Tags list (see below)
 
 ### Tag
