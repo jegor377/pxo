@@ -1,9 +1,9 @@
 # PXO File Format Specification (CANDIDATE)
 PXO file format specification repository.
 
-1. References
-2. Introduction
-3. Header
+1. [References](#references)
+2. [Introduction](#introduction)
+3. [Header](#header)
 4. Frames
 5. Config Chunks
 6. File Format Changes
