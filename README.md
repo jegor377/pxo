@@ -28,17 +28,17 @@ The format is based on ASE file format specification, but with changes (signatur
 Header without constant size.
 
     BYTE[3]      Signature (Always 'PXO' in ascii codes)
-    BYTE[3]      Version (see [this](#version) for more info)
+    BYTE[3]      Version (see Versioning section for more info)
     WORD         Frames count
     WORD         Layers count
     WORD         Tags count
     WORD         Width in pixels
     WORD         Height in pixels
-    BYTE         Export format (see [this](#export-formats) for more info)
+    BYTE         Export format (see Export Formats section for more info)
     STRING       Save path
     STRING       Export path
 
-### Version
+### Versioning
 Every new PXO File Format Specification has to be released along with new Pixelorama version. When it happens, the new PXO File Format Specification version derives from Pixelorama versioning system. For example, when Pixelorama 0.8.2 is released, then if new PXO file format is released, then it will have version value of "082" in ASCII.
 
 ### Export Formats
