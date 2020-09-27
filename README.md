@@ -12,14 +12,14 @@ PXO file format specification repository.
 ## References
 PXO files use Intel (little-endian) byte order.
 
-* BYTE: An 8-bit unsigned integer value
-* WORD: A 16-bit unsigned integer value
-* DWORD: A 32-bit unsigned integer value
-* BYTE[n]: "n" BYTEs.
-* STRING:
+* `BYTE`: An 8-bit unsigned integer value
+* `WORD`: A 16-bit unsigned integer value
+* `DWORD`: A 32-bit unsigned integer value
+* `BYTE[n]`: "n" BYTEs.
+* `STRING`:
     - `WORD`: length (number of bytes)
     - `BYTE[length]`: characters (in UTF-8). The `'\0'` character is not included.
-* PIXEL: Alias for BYTE[4], where each BYTE represent a channel from RGBA format.
+* `PIXEL`: Alias for BYTE[4], where each BYTE represent a channel from RGBA format.
 
 ## Introduction
 The format is based on ASE file format specification, but with changes (signature and version instead of magic number, diffrent data types, etc...). The color depth is always static - 32 bit, and images are always compressed with [ZStandard](https://github.com/facebook/zstd).
