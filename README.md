@@ -18,7 +18,7 @@ PXO files use Intel (little-endian) byte order.
 * PIXEL: Alias for BYTE[4], where each BYTE represent a channel from RGBA format.
 
 ## Introduction
-The format is based on ASE file format specification, but with changes (signature and version instead of magic number, diffrent data types, etc...). The color depth is always static - 32 bit, and images are always compressed with zstandard.
+The format is based on ASE file format specification, but with changes (signature and version instead of magic number, diffrent data types, etc...). The color depth is always static - 32 bit, and images are always compressed with ZStandard.
 
 ## Header
 
