@@ -1,4 +1,4 @@
-# PXO File Format (.pxo) Specification (CANDIDATE)
+# PXO File Format (.pxo) Specification (INCOMPLETE AND DROPPED FOR NOW)
 PXO file format specification repository.
 
 1. [References](#references)
